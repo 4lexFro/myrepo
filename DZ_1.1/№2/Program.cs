@@ -7,10 +7,20 @@ Console.WriteLine("Введите a ");
 Console.WriteLine("Введите b ");
 int a = Convert.ToInt32(Console.ReadLine());
 int b = Convert.ToInt32(Console.ReadLine());
+int max;
+int min;
 
 if (a > b) 
 {
-    Console.WriteLine(a);
+    max = a;
+    Console.WriteLine("max = " );
+    min = b;
+    Console.WriteLine("min = " );
 }
 else
-    Console.WriteLine(b);
+    max = b;
+    Console.WriteLine("max = ");
+    min = a;
+    Console.WriteLine("min = ");
+    
+
