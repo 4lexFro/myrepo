@@ -2,12 +2,13 @@
 // а на выходе показывает все целые числа от -N до N
 
 Console.WriteLine("Start");
+int N;
+Console.Write("Введите N ");
 
-Console.Write("Введите N: ");
-
-int N = Convert.ToInt32(Console.ReadLine());
+// int N = Convert.ToInt32(Console.ReadLine());
 // или
-// int N = int.Parse(Console.Readline());
+
+N = int.Parse(Console.ReadLine());
 int index = -N;
 while (index <= N)
 {
