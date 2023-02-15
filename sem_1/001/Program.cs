@@ -11,7 +11,7 @@ int N = Convert.ToInt32(Console.ReadLine());
 int index = -N;
 while (index <= N)
 {
-    Console.WriteLine(index);
+    Console.Write(index + " ");
     index = index + 1;
 }
 
