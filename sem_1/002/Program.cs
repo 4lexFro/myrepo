@@ -24,4 +24,4 @@
 // 3) Можно взять неполное частное при делении на 10 -> 45 <- и
 // сделать 45 -4 * 10 -  (математика))
 
-System.Console.WriteLine(Convert.ToString(Console.ReadLine())[1]);
+System.Console.WriteLine(Convert.ToString(Console.ReadLine())[1]); // это слишком медленно
