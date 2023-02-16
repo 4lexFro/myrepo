@@ -1,4 +1,4 @@
-﻿int Max (int arg1, int arg2, int arg3)
+﻿int Max(int arg1, int arg2, int arg3)
 {
     int result = arg1;
     if (arg2 > result)
@@ -8,6 +8,10 @@
     return result;
 }
 int[] array = { 1, 46, 333, 19, 59, 23, 76, 18, 9 };
+
+//array[0] = 12;
+//Console.WriteLine(array[0]);  // 11 и 12 показывают,как можно переназначить
+// элемент массива. Элемент с индексом 0 был 1, стал 12
 int result = Max(
     Max(array[0], array[1], array[2]),
     Max(array[3], array[4], array[5]),
