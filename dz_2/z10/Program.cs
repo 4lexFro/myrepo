@@ -10,6 +10,7 @@
 // а затем получаем остаток от деления ab на 10 — опять же, искомое b.
 
 Console.Write("Введите число: ");
+
 int value = Convert.ToInt32(Console.ReadLine());
 
 int Method(int value)
@@ -18,8 +19,10 @@ int Method(int value)
 }
 
 if (value > 99 && value < 1000)
-
+{
+    Console.Write("Второе число: ");
     Console.WriteLine(Method(value));
+}
 else
 {
     Console.WriteLine("Это не трехзначное число");
