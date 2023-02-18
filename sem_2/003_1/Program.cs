@@ -6,14 +6,17 @@
 //    index = index + 2
 //}
 
-void EvenNumbers(int N)                        // { Метод вычисления четных чисел
-{                                              
+string EvenNumbers(int N)                        // { Метод вычисления четных чисел
+{    
+    string output = "" ;                                        
     int index = 2;                             
     while (index <= N)                         
     {                                        
-        System.Console.WriteLine(index);
+        output = output + index + "";
         index = index + 2;
     }
+
+    return output;
 }                                               //}
 
 
@@ -24,4 +27,5 @@ int GetNumber(string text)                        // { Метод введени
 }                                                 // }
 
 int N = GetNumber(" Введите число: ");            // Вызов метода введения числа
-EvenNumbers(N);                                   // Вызов метода вычисления четных
+string result = EvenNumbers(N);  
+System.Console.WriteLine(result);                                 // Вызов метода вычисления четных
