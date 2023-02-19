@@ -11,12 +11,12 @@ bool Palindrom(string number)
     {
         if (number[0] == number[4] && number[1] == number[3])
         {
-            //Console.WriteLine("Палиндром");
+            Console.WriteLine("Палиндром");
             return true;
         }
         else
         {
-            //Console.WriteLine("Не палиндром");
+            Console.WriteLine("Не палиндром");
             return false;
         }
         return true;
@@ -32,12 +32,12 @@ Console.WriteLine("Введите пятизначное число: ");
 string number = Console.ReadLine();
 
 bool result = Palindrom(number);
-if (result == true)
-{
-    Console.WriteLine("Палиндром");
-}
-else
-{
-    Console.WriteLine("Не палиндром");
-}
-// Console.WriteLine(result);
+// if (result == true)
+// {
+   // Console.WriteLine("Палиндром");
+// }
+// else
+// {
+    // Console.WriteLine("Не палиндром");
+// }
+ //Console.WriteLine(result);
