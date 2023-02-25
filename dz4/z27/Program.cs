@@ -9,14 +9,20 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int SumElements(int number)
 {
+    int len = Convert.ToString(number).Length;
+
     int sum = 0;
-    while (number > 0)
+
+   for (int i = 0; i < len; i++)
     {
-        sum = sum + number % 10;
-        number = number / 10;
+        while (number > 0)
+        {
+            sum = sum + number % 10;
+            number /= 10;
+        }
     }
     return sum;
 }
 
-int summa = SumElements(number);
-Console.WriteLine("Сумма : " + summa);
+int sum = SumElements(number);
+Console.WriteLine("Сумма : " + sum);
