@@ -42,12 +42,13 @@ void Method2_1(string msg, int count)
 //----------------------------------------------
 
 int Method3() // Если он что-то возвращает,то надо указывать тип данных,
-// которые мы ожидаем - int 
+// которые мы ожидаем - int
 {
     return DateTime.Now.Year;
 }
 
 int year = Method3();
+
 //Console.WriteLine(year);
 
 //==================================================================
@@ -55,23 +56,42 @@ int year = Method3();
 //4) Что-то принимаю,что-то отдают:
 //-----------------------------------
 
-string Method4( int count, string text) // Показать строку C count раз
- {
-    int i = 0;
-    string result = String.Empty; // Это начальное значение result - пустая строка
- // типа, i = 0 и тд для типа данных string
-    while (i < count)
+//string Method4( int count, string text) // Показать строку C count раз
+//{
+//  int i = 0;
+//   string result = String.Empty; // Это начальное значение result - пустая строка
+// типа, i = 0 и тд для типа данных string
+//   while (i < count)
+//   {
+//        result = result + text;
+//        i++;
+//   }
+//   return result;
+//}
+
+//string res = Method4(10, "qwerty");  // десять раз показать qwerty
+//Console.WriteLine(res);
+
+//=========================================================================
+
+// Цикл for :
+
+//for(int i = 0, i < 10, i++)
+//{
+// Console.WriteLine(i);
+//}
+
+string Method4(int count, string text)
+{
+    string result = String.Empty;
+    for (int i = 0; i < count; i++)
     {
         result = result + text;
-        i++;
     }
     return result;
 }
 
-string res = Method4(10, "qwerty");  // десять раз показать qwerty
-//Console.WriteLine(res);
+string res = Method4(10, "qwerty");
+Console.WriteLine(res);
 
-
-
-
-
+//=================================================================
