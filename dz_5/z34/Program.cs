@@ -23,7 +23,7 @@
  {
      for (int i = 0; i < size; i++)
      {
-        numbers[i] = new Random().Next(99, 999);
+        numbers[i] = new Random().Next(100, 999);
      }
  }
 
