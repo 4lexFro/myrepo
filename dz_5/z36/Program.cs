@@ -20,7 +20,7 @@ PrintArray(numbers);
 
 int sum = 0;
 
-for (int a = 0; a < numbers.Length; a = a + 2)
+for (int a = 1; a < numbers.Length; a = a + 2)
 {
    sum = sum + numbers[a];
 }
