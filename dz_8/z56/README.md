@@ -16,7 +16,6 @@
 int[,] array = new int [4, 7];
 FillArray(array);
 PrintArray(array);
-//FindMinSum(array);
 
 void FillArray(int[,] matr)
 {
