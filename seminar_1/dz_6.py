@@ -7,7 +7,7 @@
 # 385916 -> yes
 # 123456 -> no
 
-number = int(input(' Введите шестизначное число: '))
+number = int(input(' Введите номер билета: '))
 digit1 = number // 100000
 digit2 = number // 10000 % 10
 digit3 = number // 1000 % 10
