@@ -12,3 +12,7 @@ print(f' Сумма цифр числа {number} равна {sum}')
 # num = str(number)
 # if len (num) > 3 or len (num) < 3:
 #     print(' Число не трехзначное')
+
+# Альтернативное решение через строки:
+# num = input(' Введите трехзначное число: ')
+# print(f'{int(num[0])+int(num[1])+int(num[2])}')
