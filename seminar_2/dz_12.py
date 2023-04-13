@@ -5,3 +5,10 @@
 # подсказки. Он называет сумму этих чисел S и их 
 # произведение P. Помогите Кате отгадать задуманные Петей 
 # числа.
+sum = int(input('Введите сумму '))
+prod = int(input('Введите произведение '))
+for x in range(sum):
+    for y in range(prod):
+        if sum == x + y and prod == x * y:
+            print(f'x = {x}, y = {y}')
+            
