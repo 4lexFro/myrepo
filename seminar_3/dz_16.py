@@ -12,7 +12,7 @@ n = int(input('Введите число N: '))
 import random
 list = []
 for _ in range(n):
-    list.append(random.randint(0, 10))
+    list.append(random.randint(1, 10))
 print(list)
 x = random.randint(0, len(list) - 1)
 print(list[x])
