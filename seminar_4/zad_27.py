@@ -13,8 +13,10 @@
 
 # Output: 13
 x = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure.So if she sells sea shells on the sea shore I'm sure that the shells are sea shore shells"
-y = x.split(" ")
-#print(y)
+y = x.lower().replace('.', ' ').split(" ") # lower - приводим текст в нижний регистр
+# replace - заменяем точку пробелом
+# split - создает из строки список  
+print(y)
 newSecondList = []
 for i in y:
     if i not in newSecondList:
