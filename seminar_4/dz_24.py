@@ -15,7 +15,7 @@
 
 import random
 kust = int(input("введите количество кустов: "))
-yagodi = list(random.randint(50, 100) for i in range(kust))
+yagodi = list(random.randint(5, 10) for i in range(kust))
 result = []
 i = 0
 sum = 0
